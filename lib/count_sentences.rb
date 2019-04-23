@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
-    temp_store = self.split("?", ".")
+    delimiters = ["?", "'",".", "!"]
+    self.split(Regexp.union(delimiters)).reject(&:empty?)
   end
 end
