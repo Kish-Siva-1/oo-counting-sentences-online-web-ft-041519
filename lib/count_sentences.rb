@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    temp_store = self.split("?", ".").count
+    temp_store = self.split("?", ".")
     binding.pry
   end
 end
